@@ -28,8 +28,6 @@ namespace If_Form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Console.WriteLine("Дано трехзначное число. Не прибегая к использованию строк вывести наибольшую из его цифр\n");
-            //Console.WriteLine("Введите трёхзначное число:");
 
             int x = Convert.ToInt32(textBox1.Text);
             string outMessage = Logic.Compare(x);
@@ -39,8 +37,6 @@ namespace If_Form
             Properties.Settings.Default.outMessage = outMessage;
             Properties.Settings.Default.Save();
 
-
-            //Console.WriteLine(outMessage);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
